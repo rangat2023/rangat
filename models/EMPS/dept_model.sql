@@ -1,5 +1,5 @@
 {{config(materialized ='view')}}
 
 with emp_DEPT as
-(select * From A.public.DEPT)
-select * from emp_DEPT
+(select DEPTNO, DNAME, LOC From A.public.DEPT)
+select DEPTNO, DNAME, LOC from emp_DEPT

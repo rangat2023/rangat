@@ -1,5 +1,5 @@
 {{config(materialized ='view')}}
 
 with emp_cte as
-(select * From A.public.EMP)
-select * from emp_cte
+(select EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM, DEPTNO as DEPTNOE From A.public.EMP)
+select EMPNO, ENAME, JOB, MGR, HIREDATE, SAL, COMM DEPTNOE from emp_cte
