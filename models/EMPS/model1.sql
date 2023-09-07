@@ -3,7 +3,7 @@
 
 with cte1 as (
     
-     select DEPTNO  ,JOB, sum(sal) from A.public.EMP
+     select DEPTNO  ,JOB as jobsss, sum(sal) from A.public.EMP
 group by DEPTNO, JOB 
 )
 
