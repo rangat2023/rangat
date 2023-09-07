@@ -8,4 +8,4 @@ group by DEPTNO, JOB
 )
 
 select * from cte1
-;
+ 
