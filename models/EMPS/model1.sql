@@ -1,8 +1,11 @@
 {{config(materialized ='table')}}
 
 
-with cte1 as (select deptno, sum(sal) from a.public.emp group by deptno)
+with cte1 as (
+    
+     select DEPTNO  ,JOB, sum(sal) from A.public.EMP
+group by DEPTNO, JOB 
+)
 
-select *
-from cte1
+select * from cte1
 ;
