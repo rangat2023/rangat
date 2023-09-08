@@ -1,0 +1,22 @@
+version: 2
+
+sources:
+  - name: config1
+    database: A
+    schema: PUBLIC
+    tables:
+      - name: table_name_a
+        identifier: EMP
+      - name: table_name_b
+        identifier: EMPL
+  - name: config2
+    database: B
+    identifier : 
+    
+    schema: PUBLIC
+    tables:
+      - name: table_name_a
+        identifier: EMP
+      - name: table_name_b
+        identifier: EMPL
+
